@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <DraggableImage key="1" />
-    <DraggableImage key="2" />
+    <DraggableImage />
   </div>
 </template>
 
