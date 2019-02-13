@@ -1,8 +1,14 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
+import VDragged from "v-dragged";
+import Croppa from 'vue-croppa';
+
 
 Vue.use(Router);
+Vue.use(VDragged);
+
+Vue.use(Croppa);
 
 export default new Router({
   mode: "history",
@@ -12,15 +18,6 @@ export default new Router({
       path: "/",
       name: "home",
       component: Home
-    },
-    {
-      path: "/about",
-      name: "about",
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "about" */ "./views/About.vue")
     }
   ]
 });

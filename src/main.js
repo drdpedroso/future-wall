@@ -1,4 +1,5 @@
 import Vue from "vue";
+import "vue-croppa/dist/vue-croppa.css";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
