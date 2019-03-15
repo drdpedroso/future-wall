@@ -13,11 +13,11 @@
 
 
     <div>
-      <img src="https://resizedimgs.vivareal.com/fit-in/870x653/vr.images.sp/d56f17fc85ddbbb0bcf85c48969fc8a4.jpg"/>
+      <img :src="alpha"/>
     </div>
 
     <div>
-      <img src="http://engenhariae.com.br/wp-content/uploads/2017/11/dinheiro-sal%C3%A1rio.jpg"/>
+      <img :src="money"/>
     </div>
     <div>
       <img :src="friends"/>
@@ -29,12 +29,16 @@
 
   import image from '../assets/Screen Shot 2019-02-13 at 18.22.54.png'
   import friends from '../assets/fiends.jpeg'
+  import alpha from '../assets/alpha.jpg'
+  import money from '../assets/moneey.png'
 export default {
   name: "DraggableImage",
   data() {
     return {
       image,
-        friends
+      money,
+        friends,
+        alpha
     };
   },
   methods: {
@@ -65,6 +69,6 @@ canvas {
 
   .container img {
     width: 505px;
-    /*height: 300px;*/
+    max-height: 550px;
   }
 </style>
